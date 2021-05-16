@@ -4,6 +4,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from .models import Profile
 from .forms import UserRegistrationForm,UserEditForm,ProfileEditForm
+from django.contrib import messages
 # Create your views here.
 
 @login_required
@@ -54,7 +55,7 @@ def edit(request):
                   'account/edit.html',
                   {'user_form': user_form,
                    'profile_form': profile_form})
-                   
+
 #no more needed - replaced by LoginView.as_view
 # def user_login(request):
 #     if request.method=='POST':
