@@ -9,6 +9,10 @@ from django.contrib.auth.decorators import login_required
 def dashboard(request):
     return render(request,'account/dashboard.html',{'section':'dashboard'})
 
+def logout_view(request):
+    logout(request)
+    # Redirect to a success page.
+    
 #no more needed - replaced by LoginView.as_view
 # def user_login(request):
 #     if request.method=='POST':

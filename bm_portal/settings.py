@@ -135,6 +135,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'mail.agenturserver.de'
+EMAIL_HOST_USER = 'p387407p20'
+EMAIL_HOST_PASSWORD = 'Mar!e2004Clemat!s'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'hello@swestphal.io'
+SERVER_EMAIL = 'hello@swestphal.io'
+
+
 LOGIN_REDIRECT_URL = 'dashboard' # where to go after successful login
 LOGIN_URL = 'login' # login url (e.g. views using the login_required decorator)
 LOGOUT_URL='logout' # redirect user to logout
