@@ -50,6 +50,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+AUTHENTICATION_BACKENDS=[
+    'django.contrib.auth.backends.ModelBackend',
+    'account.authentication.EmailAuthBackend', # add own email bases auth
+]
 ROOT_URLCONF = 'bm_portal.urls'
 
 TEMPLATES = [
